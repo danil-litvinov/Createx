@@ -68,7 +68,7 @@ html {
 .header {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background: url("../images/decor/testi-bg.svg") 50% 50% / cover no-repeat,
     linear-gradient(55.95deg, #ff403a33 0%, #f75e0533 100%);
 }
@@ -148,6 +148,7 @@ html {
 
 .header__body {
   flex-grow: 1;
+  flex-basis: 89vh;
 }
 
 .header__body-inner {
@@ -236,69 +237,69 @@ html {
   line-height: 1.6;
 }
 
-.main {
-}
 .about {
   padding: 131px 0 161px;
 }
-.container {
-}
-.about__inner {
-}
+
 .about__createx {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 180px;
 }
+
 .about__createx img {
   margin-left: 30px;
 }
+
 .about__createx-content {
   max-width: 600px;
 }
-.about__heading {
-}
+
 .heading {
   color: #1e212c;
 }
+
 .heading__subtitle {
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
 }
+
 .heading__title {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
 }
+
 .about__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   color: #424551;
 }
+
 .about__text--accent {
   margin: 48px 0 24px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
 }
+
 .about__content-buttons {
   display: flex;
 }
+
 .about__content-btn {
   margin-right: 24px;
   margin-top: 60px;
 }
+
 .about__content-btn:last-child {
   margin-left: 0;
 }
-.button {
-}
-.button--empty {
-}
+
 .about__values {
   display: flex;
   justify-content: space-between;
@@ -310,10 +311,12 @@ html {
   width: 100%;
   height: 100%;
 }
+
 .about__numbers {
   margin-left: 30px;
   align-self: center;
 }
+
 .about__number {
   margin-bottom: 20px;
   display: flex;
@@ -322,9 +325,11 @@ html {
   font-size: 18px;
   line-height: 1.5;
 }
+
 .about__number:last-child {
   margin-bottom: 0;
 }
+
 .about__number span {
   margin-right: 16px;
   font-weight: 900;
