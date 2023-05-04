@@ -63,6 +63,17 @@ html {
   transform: scale(1.02);
 }
 
+.tag {
+  background: transparent;
+  padding: 1px 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
 /* -------------------------------------------------------------- */
 
 .header {
@@ -265,12 +276,18 @@ html {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .heading__title {
   font-weight: 900;
   font-size: 46px;
   line-height: 130%;
+}
+
+.heading__text--center {
+  text-align: center;
 }
 
 .about__text {
@@ -307,6 +324,7 @@ html {
 }
 
 .about__image-box img {
+  border-radius: 4px;
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -338,3 +356,177 @@ html {
   color: #ff3f3a;
   letter-spacing: 1px;
 }
+
+/* ------------------------------------------------------------------------------- */
+
+.directions {
+  padding-bottom: 178px;
+}
+
+.directions__inner {
+  position: relative;
+}
+
+.directions__inner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: -190px;
+  width: 136px;
+  height: 115px;
+  background: url("../images/decor/2.svg") 0 0 no-repeat;
+}
+
+.directions__inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 400px;
+  left: 1450px;
+  width: 243px;
+  height: 243px;
+  background: url("../images/decor/3.svg") 0 0 no-repeat;
+}
+
+.directions__heading {
+  margin-bottom: 88px;
+}
+
+.directions__body {
+}
+
+.directions__filter-box {
+  /* max-width: 767px; */
+  display: flex;
+  margin-bottom: 56px;
+  /* justify-content: space-between; */
+}
+
+.directions__filter-item {
+  margin-right: 45px;
+}
+
+.directions__filter-item:last-child {
+  margin-right: 45px;
+}
+
+.directions__filter-btn {
+  color: #9a9ca5;
+  border: 1px solid #9a9ca5;
+}
+
+.directions__filter-btn--active {
+  border: none;
+  padding: 1px 9px;
+  color: #fff;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  transition: color 0.3s;
+}
+
+.directions__list {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+  gap: 30px;
+}
+
+.directions__list-item--marketing .directins__link-tag {
+  background: #03CEA4;
+}
+
+.directions__list-item--management .directins__link-tag {
+  background: #5A87FC;
+}
+
+.directions__list-item--hr .directins__link-tag {
+  background: #F89828;
+}
+
+.directions__list-item--design .directins__link-tag {
+  background: #F52F6E;
+}
+
+.directions__list-item--development .directins__link-tag {
+  background: #7772F1;
+}
+
+
+.directins__list-link {
+  display: block;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.directins__list-link:hover {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  transition: all .3s;
+}
+
+.directins__image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.directins__link-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid #e5e8ed;
+  border-top: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.directins__link-tag {
+  color: #fff;
+  margin-bottom: 20px;
+  align-self: flex-start;
+  background: #7772f1;
+}
+
+.directins__link-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #787a80;
+}
+
+.directins__link-btn {
+  display: flex;
+  color: #1e212c;
+}
+
+.directins__list-link:hover .directins__link-btn {
+  color: #ff3f3a;
+  transition: .3s;
+}
+
+.directins__link-btn::after {
+  content: "";
+  display: block;
+  margin-left: 11px;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icons/arrow-right.svg") 0 -3px / 100% no-repeat;
+}
+
+.directions__list-item--empty {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #f4f5f7;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #424551;
+}
+
+.directions__list-item--empty span {
+  max-width: 240px;
+}
+
+
