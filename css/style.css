@@ -814,6 +814,7 @@ html {
 
 .testimonials__user {
   display: flex;
+  align-items: center;
 }
 
 .testimonials__avatar {
