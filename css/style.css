@@ -975,14 +975,14 @@ html {
 }
 
 .companies__grid-link img {
-  filter: grayscale(0);
-  opacity: 1;
-  transition: all 1.3s;
+  filter: grayscale(1);
+  opacity: .4;
+  transition: all .7s;
 }
 
 .companies__grid-link:hover img {
-  filter: grayscale(1);
-  opacity: 0.4;
+  filter: grayscale(0);
+  opacity: 1;
   transition: all 0.3s;
 }
 
