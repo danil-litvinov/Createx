@@ -39,6 +39,14 @@ html {
   padding-bottom: 195px;
 }
 
+.main__companies {
+  padding-bottom: 177px;
+}
+
+.main__program {
+  padding: 116px 0 186px;
+}
+
 .button {
   display: inline-block;
   padding: 0 40px;
@@ -596,7 +604,9 @@ html {
 /* ====================================================================================== */
 
 .team {
-  background: url("../images/decor/team-bg.svg") calc(50% + 160px) calc(50% + -140px) no-repeat, #f4f5f7;
+  background: url("../images/decor/team-bg.svg") calc(50% + 160px)
+      calc(50% + -140px) no-repeat,
+    #f4f5f7;
 }
 
 .team__heading {
@@ -739,8 +749,8 @@ html {
   margin-right: 30px;
 }
 
-/* ====================================================TESTIMONIALS======================================================================
-=======================================================TESTIMONIALS======================================================================*/
+/*======================================================TESTIMONIALS======================================================================*/
+/*======================================================TESTIMONIALS======================================================================*/
 
 .testimonials {
   position: relative;
@@ -753,7 +763,7 @@ html {
   left: 50%;
   transform: translate(-45%, -56%);
   position: absolute;
-  background: url('../images/decor/testi-bg.svg') 0 0 / 100% no-repeat;
+  background: url("../images/decor/testi-bg.svg") 0 0 / 100% no-repeat;
   width: 1971px;
   height: 816px;
 }
@@ -924,4 +934,133 @@ html {
 
 .testimonials__dots .slick-active button::before {
   background-color: #424551;
+}
+
+/*======================================================LOGOS======================================================================*/
+/*======================================================LOGOS======================================================================*/
+
+.companies {
+  background: #f4f5f7;
+}
+
+.companies__inner {
+  position: relative;
+}
+
+.companies__inner::before {
+  content: "";
+  position: absolute;
+  background: url("../images/decor/5.svg") 0 0 / 100% no-repeat;
+  bottom: -80px;
+  left: -230px;
+  width: 90px;
+  height: 90px;
+}
+
+.companies__heading {
+  margin-bottom: 60px;
+}
+
+.companies__grid {
+  display: grid;
+  grid-template: repeat(2, 64px) / repeat(6, 1fr);
+  gap: 40px 102px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 40px 102px; */
+}
+
+.companies__grid-link {
+  display: block;
+}
+
+.companies__grid-link img {
+  filter: grayscale(0);
+  opacity: 1;
+  transition: all 1.3s;
+}
+
+.companies__grid-link:hover img {
+  filter: grayscale(1);
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+/*======================================================PROGRAM======================================================================*/
+/*======================================================PROGRAM======================================================================*/
+
+.program__inner {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.program__content {
+}
+
+.program__heading {
+  margin-bottom: 60px;
+}
+
+.program__acc {
+  width: 600px;
+}
+
+.program__acc-item {
+  margin-bottom: 24px;
+}
+
+.program__acc-link {
+  display: block;
+  padding-left: 40px;
+}
+
+.program__acc-item:last-child {
+  margin-bottom: 0;
+}
+
+.program__acc-head {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1e212c;
+}
+
+.program__acc-head::before,
+.program__acc-head::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  border-radius: 2px;
+  width: 18px;
+  height: 2px;
+  background-color: #ff3f3a;
+}
+
+.program__acc-head::after {
+  transform: rotate(90deg);
+  transition: all .4s;
+}
+
+.program__acc-head span {
+  font-weight: 400;
+  color: #ff3f3a;
+}
+
+.program__acc-text {
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  /* width: 560px; */
+}
+
+.program__acc-link--active .program__acc-head::after {
+  transform: rotate(0deg);
+}
+
+.program__image {
+  margin-left: 50px;
+  margin-top: 70px;
 }
