@@ -1415,11 +1415,11 @@ html {
   border-radius: 4px;
   padding: 13px 16px;
   resize: none;
-  color: #9a9ca5;
+  color: #424551;
 }
 
-.questions__form-input:focus {
-  color: #424551;
+.questions__form-input::placeholder {
+  color: #9a9ca5;
 }
 
 .questions__label-input textarea {
