@@ -59,4 +59,26 @@ $(function () {
       $(this).children('.program__acc-text').slideDown()
     }
   })
+
+  $('.header__nav-list a, .header__top-btn, .footer__top-link, .header__content-buttons a, .about__content-buttons a').on('click', function () {
+  
+    let href = $(this).attr('href');
+    let data = $(this).attr('data-filter')
+  
+    $('html, body').animate({
+      scrollTop: $(href).offset().top - 70
+    }, {
+      duration: 800,   // по умолчанию «400» 
+      easing: "swing" // по умолчанию «swing» 
+    });
+
+    if ($(this).attr('data-filter')) {
+      $('.directions__filter-btn').removeClass('directions__filter-btn--active')
+      $(`.directions__filter-btn[data-filter='${data}']`).addClass('directions__filter-btn--active')
+    }
+    else {
+      return(false);
+    }
+  });
+
 })
