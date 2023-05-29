@@ -60,7 +60,7 @@ $(function () {
     }
   })
 
-  $('.header__nav-list a, .header__top-btn, .footer__top-link, .header__content-buttons a, .about__content-buttons a').on('click', function () {
+  $('.header__nav-list a, .header__top-btn, .footer__top-link, .header__content-buttons a, .about__content-buttons a, .footer__bottom-link').on('click', function () {
   
     let href = $(this).attr('href');
     let data = $(this).attr('data-filter')
