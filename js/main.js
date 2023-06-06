@@ -81,4 +81,19 @@ $(function () {
     }
   });
 
+  setInterval(() => {
+    if ($(window).scrollTop() > 0) {
+      $('.burger-menu').addClass('burger-menu--follow')
+    } else {
+      $('.burger-menu').removeClass('burger-menu--follow')
+    }
+  }, 0);
+
+  $('.burger-menu, .overlay').on('click', function (e) {
+    e.preventDefault()
+    $('.header__top').toggleClass('header__top--open')
+    $('.burger-menu').toggleClass('burger-menu--active')
+    $('.overlay').toggleClass('overlay--show')
+  });
+
 })
