@@ -2023,7 +2023,7 @@ html {
     grid-template: none;
   }
 
-  .directions__list-item--empty {
+  .directions__list-item--empty span {
     display: none;
   }
 
