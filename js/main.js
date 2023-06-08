@@ -60,10 +60,16 @@ $(function () {
     }
   })
 
-  $('.header__nav-list a, .header__top-btn, .footer__top-link, .header__content-buttons a, .about__content-buttons a, .footer__bottom-link').on('click', function () {
+  $('.header__logo, .header__nav-list a, .header__top-btn, .footer__top-link, .header__content-buttons a, .about__content-buttons a, .footer__bottom-link').on('click', function () {
   
     let href = $(this).attr('href');
     let data = $(this).attr('data-filter')
+    if ($('.header__top').hasClass('header__top--open')) {
+      $('.header__top').removeClass('header__top--open')
+      $('.burger-menu').removeClass('burger-menu--active')
+      $('.overlay').removeClass('overlay--show')
+    }
+    
   
     $('html, body').animate({
       scrollTop: $(href).offset().top - 70
