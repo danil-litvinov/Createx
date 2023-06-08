@@ -2009,7 +2009,6 @@ html {
   .directions__list {
     grid-template: repeat(3, auto) / repeat(2, 1fr);
   }
-
 }
 
 
@@ -2026,6 +2025,10 @@ html {
 
   .directions__list-item--empty {
     display: none;
+  }
+
+  .directions__filter-item {
+    margin-right: 25px;
   }
 }
 
