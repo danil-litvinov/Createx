@@ -16,6 +16,59 @@ $(function () {
     slidesToShow: 4,
     draggable: false,
     waitForAnimate: false,
+    dots: true,
+    appendDots: $('.team__dots'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        }
+        },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2.4,
+          rifhtMode: true,
+          centerMode: true,
+        }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            rifhtMode: true,
+            draggable: true,
+            centerMode: true,
+            draggable: true,
+          }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1.6,
+              rifhtMode: true,
+              draggable: true,
+              centerMode: true,
+            }
+            },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1.2,
+            draggable: true,
+            centerMode: true,
+          }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              draggable: true,
+            }
+            }
+      ]
   });
 
   $('.team__arrow-prev').on('click', function (e) {
