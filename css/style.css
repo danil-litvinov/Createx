@@ -2087,6 +2087,10 @@ html {
     max-width: 250px;
     margin: 0 auto 16px auto;
   }
+  
+  .team__slider .slick-track {
+    padding: 5px;
+  }
 
   .team__slider {
     margin-bottom: 10px;
