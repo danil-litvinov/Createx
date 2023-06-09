@@ -42,6 +42,7 @@ $(function () {
             draggable: true,
             centerMode: true,
             draggable: true,
+            waitForAnimate: true,
           }
           },
           {
@@ -51,6 +52,7 @@ $(function () {
               rifhtMode: true,
               draggable: true,
               centerMode: true,
+              waitForAnimate: true,
             }
             },
         {
@@ -59,6 +61,7 @@ $(function () {
             slidesToShow: 1.2,
             draggable: true,
             centerMode: true,
+            waitForAnimate: true,
           }
           },
           {
@@ -66,6 +69,7 @@ $(function () {
             settings: {
               slidesToShow: 1,
               draggable: true,
+              waitForAnimate: true,
             }
             }
       ]
